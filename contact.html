@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="services.html">サービス</a>
+      <a href="about.html">会社概要</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>お問い合わせ</h2>
+    <form id="contact-form">
+      <label for="name">お名前</label>
+      <input type="text" id="name" maxlength="100" required>
+
+      <label for="email">メールアドレス</label>
+      <input type="email" id="email" maxlength="100" required>
+
+      <label for="message">お問い合わせ内容</label>
+      <textarea id="message" maxlength="100" required></textarea>
+
+      <button type="submit">送信</button>
+    </form>
+    <p id="message-result"></p>
+  </main>
+
+  <footer>
+    <p>&copy; xxxx 株式会社xxxx</p>
+  </footer>
+</body>
+</html>
