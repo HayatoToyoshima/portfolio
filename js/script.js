@@ -6,16 +6,19 @@ document.getElementById('contact-form')?.addEventListener('submit', function (e)
   const message = document.getElementById('message').value.trim();
 
   const result = document.getElementById('message-result');
+  result.style.color = 'red';
 
   if (name.length > 100 || email.length > 100 || message.length > 100) {
     result.textContent = '入力はすべて100文字以内でお願いします。';
     return;
   }
 
-  if (!email.match(/^[^@]+@[^@]+\.[^@]+$/)) {
+  if (!email.match(/^[a-zA-Z0-9_.+-]+@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/)) {
     result.textContent = 'メールアドレスの形式が正しくありません。';
     return;
   }
 
-  result.textContent = 'お問い合わせを受け付けました（仮）。';
+  // エラーなしの場合
+  result.textContent = '';
+  alert('お問い合わせを受け付けました。');
 });

@@ -45,3 +45,13 @@ form {
   flex-direction: column;
   gap: 1em;
 }
+
+#message {
+    height: 4.5em;
+}
+
+#message-result {
+  color: red;
+  font-weight: bold;
+  margin-top: 1em;
+}
