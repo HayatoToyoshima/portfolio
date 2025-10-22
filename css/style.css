@@ -214,3 +214,30 @@ footer {
   resize: none;
   height: 100px;
 }
+
+.contact .panel form .input,
+.contact .panel form .textarea {
+  width: 33vw;             /* 画面幅の33% */
+  max-width: 400px;        /* 最大幅を制限して極端に広がらないように */
+  box-sizing: border-box;
+  margin: 0 auto;          /* 中央寄せ */
+  display: block;
+}
+
+.contact .panel form .btn {
+  width: auto;             /* コンテンツ幅に合わせる */
+  padding: 10px 20px;      /* 小さめの余白 */
+  display: block;
+  margin: 16px auto 0 auto; /* 中央寄せ + 上余白 */
+}
+
+@media (max-width: 768px) {
+  .contact .panel form .input,
+  .contact .panel form .textarea {
+    width: 90vw;            /* スマホでは画面幅に合わせる */
+  }
+
+  .contact .panel form .btn {
+    width: 50vw;            /* スマホでもボタンを小さめ */
+  }
+}
