@@ -168,9 +168,11 @@ footer {
   }
 }
 
-.home-space,
-.contact-space {
+.home-space {
   padding : 170px;
+}
+.contact-space {
+  padding : 55px;
 }
 
 .contact form {
@@ -200,4 +202,33 @@ footer {
   .contact form {
     gap: 12px;
   }
+}
+
+.home .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* 横方向中央寄せ */
+  justify-content: center; /* 縦方向の位置調整（必要に応じて） */
+  text-align: center;     /* テキストも中央揃え */
+}
+
+.home .hero {
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.home .hero-ctas {
+  justify-content: center;
+}
+
+.contact .panel {
+  margin: 0 auto;        /* 横方向中央寄せ */
+  justify-content: center;
+  text-align: center;    /* フォーム内テキストも中央揃え */
+}
+
+.contact form {
+  margin: 0 auto;
 }
