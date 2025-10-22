@@ -47,11 +47,6 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(63, 131, 248, 0.4);
 }
-
-/* =========================
-   ホーム画面（.home）のグラデーションを廃止しシンプル化
-   ========================= */
-
 .home .hero {
   background: #fdfaf5; /* 淡いベージュ背景 */
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -174,5 +169,5 @@ footer {
 }
 
 .home-space {
-  padding : 100px;
+  padding : 170px;
 }
