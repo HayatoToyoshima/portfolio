@@ -340,7 +340,7 @@ body{
 .services .image-row img,
 .about .image-row img {
   width: 33vw;       /* 画面幅の33% */
-  height: 33vh;      /* 画面高さの33% */
+  height: 60vh;      /* 画面高さの60% */
   object-fit: cover; /* 画像の比率を保ちながら切り取り */
   border-radius: 0;  /* 全て同サイズなので角丸はなし */
   flex-shrink: 0;    /* はみ出し防止 */
