@@ -48,14 +48,58 @@ body {
   box-shadow: 0 6px 16px rgba(63, 131, 248, 0.4);
 }
 
-.services .service-card,
-.about .glass-card,
-.contact .panel,
-.home .feature {
-  background: var(--card);
+/* =========================
+   ホーム画面（.home）のグラデーションを廃止しシンプル化
+   ========================= */
+
+.home .hero {
+  background: #fdfaf5; /* 淡いベージュ背景 */
   border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  color: var(--text);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.home .hero-left h1 {
+  background: none;      /* グラデーションを削除 */
+  color: #3a78c0;        /* 落ち着いた青に変更 */
+  -webkit-background-clip: unset;
+}
+
+.home .hero-visual {
+  background: #ffffff;   /* 白背景でシンプルに */
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ホームページの特徴カード */
+.home .feature {
+  background: #ffffff;   /* 白背景 */
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* CTAボタンは青ベース */
+.home .hero-ctas .btn {
+  background: #4f9be4;   /* シンプルな青 */
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(79,155,228,0.25);
+}
+
+.home .hero-ctas .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(79,155,228,0.35);
+}
+
+.home .feature h3 {
+  color: #3a78c0;       /* 青系タイトル */
+}
+
+.home .feature p {
+  color: #1f2b4d;       /* 読みやすい濃紺テキスト */
+}
+
+.home .hero-visual .orb {
+  background: rgba(79,155,228,0.15); /* 青系に淡く */
+  filter: blur(20px);
 }
 
 h1, h2, h3 {
