@@ -205,7 +205,6 @@ footer {
 }
 
 .center {
-  margin: 0 auto;        /* 横方向中央寄せ */
   justify-content: center;
   align-items: center;
   text-align: center;  
