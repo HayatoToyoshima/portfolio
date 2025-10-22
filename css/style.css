@@ -209,3 +209,8 @@ footer {
   align-items: center;
   text-align: center;  
 }
+
+.contact-message {
+  resize: none;
+  height: 300px;
+}
