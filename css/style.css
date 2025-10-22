@@ -172,3 +172,7 @@ footer {
     height: 33vh;
   }
 }
+
+.home-title,.home-body {
+  padding : 200px;
+}
