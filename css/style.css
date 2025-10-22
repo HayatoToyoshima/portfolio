@@ -330,35 +330,39 @@ body{
 .services .image-row,
 .about .image-row {
   display: flex;
-  flex-wrap: nowrap;           /* 折り返さず横並び */
-  justify-content: center;     /* 中央寄せ */
+  justify-content: center;
   align-items: center;
-  gap: 16px;                   /* 画像間の余白 */
-  overflow: hidden;            /* はみ出し防止 */
-  margin-top: 24px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 0; /* 画像間に余白を作りたくない場合 */
 }
 
 .services .image-row img,
 .about .image-row img {
-  flex: 1 1 0;                 /* 均等幅で拡縮 */
-  max-width: 100%;
-  height: auto;                /* アスペクト比維持 */
-  border-radius: 12px;         /* 少し角丸 */
-  object-fit: cover;           /* トリミングで整える */
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  width: 33vw;       /* 画面幅の33% */
+  height: 33vh;      /* 画面高さの33% */
+  object-fit: cover; /* 画像の比率を保ちながら切り取り */
+  border-radius: 0;  /* 全て同サイズなので角丸はなし */
+  flex-shrink: 0;    /* はみ出し防止 */
+  display: block;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .services .image-row img:hover,
 .about .image-row img:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.4);
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
   .services .image-row,
   .about .image-row {
     flex-direction: column;
-    gap: 12px;
+  }
+
+  .services .image-row img,
+  .about .image-row img {
+    width: 100vw;
+    height: 33vh;
   }
 }
