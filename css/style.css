@@ -142,8 +142,8 @@ footer {
 
 .services .image-row img,
 .about .image-row img {
-  width: 33vw;       /* 画面幅の33% */
-  height: 60vh;      /* 画面高さの60% */
+  width: 30vw;       /* 画面幅の33% */
+  height: 57vh;      /* 画面高さの60% */
   object-fit: contain;  /* トリミングせず全体を表示 */
   border-radius: 0;  /* 全て同サイズなので角丸はなし */
   flex-shrink: 0;    /* はみ出し防止 */
