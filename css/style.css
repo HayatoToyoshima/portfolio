@@ -183,11 +183,12 @@ footer {
 
 .contact .input,
 .contact .select {
-  width: 100%;
+  width: 50%;
+  height: 30px;
 }
 
 .contact .textarea {
-  width: 100%;
+  width: 50%;
   height: 120px; /* 目安：5行程度 */
   resize: none;  /* ユーザーによるリサイズ不可 */
   min-height: 120px;
