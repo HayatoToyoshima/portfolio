@@ -225,11 +225,14 @@ footer {
   display: block;
 }
 
-.contact .panel form .btn {
-  width: auto;             /* コンテンツ幅に合わせる */
+.contact .panel form {
   padding: 10px 20px;      /* 小さめの余白 */
   display: block;
   margin: 16px auto 0 auto; /* 中央寄せ + 上余白 */
+}
+
+.btn {
+    width: 50%;
 }
 
 @media (max-width: 768px) {
