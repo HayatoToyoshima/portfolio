@@ -183,12 +183,10 @@ footer {
 
 .contact .input,
 .contact .select {
-  width: 50%;
   height: 30px;
 }
 
 .contact .textarea {
-  width: 50%;
   height: 120px; /* 目安：5行程度 */
   resize: none;  /* ユーザーによるリサイズ不可 */
   min-height: 120px;
@@ -229,10 +227,6 @@ footer {
   padding: 10px 20px;      /* 小さめの余白 */
   display: block;
   margin: 16px auto 0 auto; /* 中央寄せ + 上余白 */
-}
-
-.btn {
-    width: 50%;
 }
 
 @media (max-width: 768px) {
