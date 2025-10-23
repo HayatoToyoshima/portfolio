@@ -308,3 +308,13 @@ nav a:hover::after {
     font-size: 14px;
   }
 }
+
+  .contact-form {
+    display: flex;
+    justify-content: center; /* 横方向の中央寄せ */
+    align-items: center; /* 縦方向の中央寄せ */
+  }
+
+  .form-container {
+    text-align: center;
+  }
