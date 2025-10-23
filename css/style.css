@@ -42,6 +42,7 @@ body {
   background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
   color: #fff;
   box-shadow: 0 4px 12px rgba(63, 131, 248, 0.3);
+  width:100px;
 }
 .btn:hover {
   transform: translateY(-2px);
@@ -183,10 +184,12 @@ footer {
 
 .contact .input,
 .contact .select {
+  width:300px;
   height: 30px;
 }
 
 .contact .textarea {
+  width:300px;
   height: 120px; /* 目安：5行程度 */
   resize: none;  /* ユーザーによるリサイズ不可 */
   min-height: 120px;
